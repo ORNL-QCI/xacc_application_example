@@ -2,8 +2,7 @@
 
 int main(int argc, char** argv) {
     xacc::Initialize(argc, argv);
-
-
+    
     auto qpu = xacc::getAccelerator("tnqvm");//, {std::make_pair("tnqvm-visitor", "exatn")});
 
     auto xasmCompiler = xacc::getCompiler("xasm");
