@@ -6,7 +6,7 @@ int main(int argc, char** argv) {
   xacc::Initialize(argc, argv);
 
   //Choose the desired quantum accelerator:
-  auto qpu = xacc::getAccelerator("tnqvm");//, {std::make_pair("tnqvm-visitor", "exatn")});
+  auto qpu = xacc::getAccelerator("tnqvm", {std::make_pair("tnqvm-visitor", "exatn")});
 
   //Choose the desired quantum programming language:
   auto xasmCompiler = xacc::getCompiler("xasm");
